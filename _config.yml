@@ -60,7 +60,7 @@ pagination_dir: page
 include:
 exclude:
 ignore:
-theme: Chic
+theme: Chik
 deploy:
 markdown:
   plugins:
