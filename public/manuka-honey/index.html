@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Kathleen Russano">
+
+
+    <meta name="subtitle" content="Documentation">
+
+
+    <meta name="description" content="Research">
+
+
+
+<title>Manuka Honey | wikip.co</title>
+
+
+
+    <link rel="icon" href="https://res.cloudinary.com/alchemist-cookbook/image/upload/v1661583958/folder.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="../js/script.js"></script>
+    
+    <script src="../js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">
+                    DelMarChildCare
+                </a></div>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="../archives">
+                            Posts
+                        </a>
+                        
+                        <a class="menu-item" href="../category">
+                            Categories
+                        </a>
+                        
+                        <a class="menu-item" href="../tag">
+                            Tags
+                        </a>
+                        
+                        <a class="menu-item" href="../about">
+                            About
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.classList.contains("active")) {
+            toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        } else {
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Manuka Honey</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Kathleen Russano</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">December 31, 1969&nbsp;&nbsp;16:00:00</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="../categories/bee-products/">Bee Products</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p><strong>Manuka Honey</strong> (also known as Leptospermum honey) is a honey produced exclusively from the nectar of the mānuka tree, Leptospermum scoparium.  Mānuka honey is produced by European honey bees (Apis mellifera) foraging on the mānuka tree (Leptospermum scoparium) which grows uncultivated throughout New Zealand and southeastern Australia.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<h2 id="Healing-Properties">Healing Properties</h2>
+<h3 id="Antiinflammatory">Antiinflammatory</h3>
+<h3 id="Antiviral">Antiviral</h3>
+<h3 id="Antimicrobial">Antimicrobial</h3>
+<p>Manuka honey contains a methylglyoxal component which imbues it with additional antimicrobial activity compared to other varieties of honey.<sup class="footnote-ref"><a href="#fn1" id="fnref1:1">[1:1]</a></sup></p>
+<ul>
+<li>The methylglyoxal component of manuka honey is primarily responsible for the Unique Manuka Factor (UMF), a term used by the industry to describe the heightened antimicrobial activity of Manuka honey.<sup class="footnote-ref"><a href="#fn1" id="fnref1:2">[1:2]</a></sup></li>
+</ul>
+<h3 id="Antibacterial">Antibacterial</h3>
+<p>After Manuka honey is collected, it is subject to a bacterial inhibition test, and the UMF is defined as the concentration of phenol necessary to achieve the bacterial inhibition of that Manuka honey sample (for instance, Manuka honey with a UMF of 15 would exhibit the same bacterial inhibition as 15% phenol).<sup class="footnote-ref"><a href="#fn1" id="fnref1:3">[1:3]</a></sup></p>
+<h3 id="Epithelialization-Wound-Healing">Epithelialization (Wound Healing)</h3>
+<p>Manuka honey significantly reduces neutrophil (white blood cell) recruitment and inflammatory behavior in the wound site in a dose-dependent fashion under the cytotoxic limit.<sup class="footnote-ref"><a href="#fn1" id="fnref1:4">[1:4]</a></sup></p>
+<h2 id="Disease-Symptom-Treatment">Disease / Symptom Treatment</h2>
+<h3 id="Cancer">Cancer</h3>
+<h4 id="Chemotherapy">Chemotherapy</h4>
+<p>Combination treatment of cancer cells with manuka honey and chemotherapy demonstrated an improvement in host survival. This highlights a potentially novel role for manuka honey in alleviating chemotherapy-induced toxicity.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
+<h3 id="Burn-Treatment">Burn Treatment</h3>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><strong>Study Type:</strong> Human Study: In Vitro<br><strong>Title:</strong> Manuka Honey Modulates the Inflammatory Behavior of a dHL-60 Neutrophil Model under the Cytotoxic Limit<br><strong>Author(s):</strong> Benjamin A. Minden-Birkenmaier, Kasyap Cherukuri, Richard A. Smith, Marko Z. Radic, and Gary L. Bowlin<br><strong>Institution(s):</strong> Department of Biomedical Engineering, University of Memphis, 3806 Norriswood Ave., Memphis, TN 38152, USA; Department of Orthopaedic Surgery &amp; Biomedical Engineering, University of Tennessee Health Science Center, 956 Court Ave., Memphis, TN 38163, USA; Department of Microbiology, Immunology and Biochemistry, University of Tennessee Health Science Center, 858 Madison Ave., Memphis, TN 38163, USA<br><strong>Publication:</strong> <i>International Journal of Biomaterials</i><br><strong>Date:</strong> Feb 2019<br><strong>Abstract:</strong> <i>Recent work has shown that Manuka honey, an increasingly popular wound additive with potent antibacterial properties, also has anti-inflammatory properties. However, little research has been done examining its effect on neutrophils. This study investigates the hypothesis that Manuka honey reduces neutrophil superoxide release and chemotaxis and reduces the activation of the inflammatory nuclear factor-κB (NF-κB) signaling pathway under honey’s cytotoxic limit. A differentiated HL-60 cell line was used as a neutrophil model and cultured in various concentrations of Manuka honey for 3 and 24 hours to measure cytotoxicity via mitochondrial activity and visual trypan-exclusion count. Cytochrome C and Boyden chamber assays were used to measure the effect of Manuka honey on superoxide release and chemotaxis toward fMLP, respectively. Additionally, a Western blot for NF-κB inhibitor α (IκBα) was performed to measure Manuka honey’s effect on the NF-κB pathway via IκBα phosphorylation. The results indicate a cytotoxic limit of 3-5% v/v. The presence of 1% honey decreased superoxide release at 24 hours. The 0.5, 1, and 3% honey concentrations reduced chemotaxis and IκBα phosphorylation in a dose-dependent fashion. These results suggest that Manuka honey significantly reduces neutrophil recruitment and inflammatory behavior in the wound site in a dose-dependent fashion under the cytotoxic limit.</i><br><strong>Link:</strong> <a target="_blank" rel="noopener" href="https://doi.org/10.1155/2019/6132581">Source</a><br><strong>Citations:</strong> <a href="#fnref1" class="footnote-backref">↩︎</a> <a href="#fnref1:1" class="footnote-backref">↩︎</a> <a href="#fnref1:2" class="footnote-backref">↩︎</a> <a href="#fnref1:3" class="footnote-backref">↩︎</a> <a href="#fnref1:4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><strong>Study Type:</strong> Animal Study: In Vitro<br><strong>Title:</strong> Intravenous Administration of Manuka Honey Inhibits Tumor Growth and Improves Host Survival When Used in Combination with Chemotherapy in a Melanoma Mouse Model<br><strong>Author(s):</strong> Maria J. Fernandez-Cabezudo, Rkia El-Kharrag, Fawaz Torab, Ghada Bashir, Junu A. George, Hakam El-Taji, Basel K. al-Ramadi<br><strong>Institution(s):</strong> Department of Biochemistry, College of Medicine and Health Sciences, UAE University, Al Ain, United Arab Emirates; Department of Medical Microbiology &amp; Immunology, College of Medicine and Health Sciences, UAE University, Al Ain, United Arab Emirates; Department of Surgery, College of Medicine and Health Sciences, UAE University, Al Ain, United Arab Emirates; Department of Surgery, Tawam Hospital –Johns Hopkins Medicine, Al Ain, United Arab Emirates<br><strong>Publication:</strong> <i>PLOS One</i><br><strong>Date:</strong> February 2013<br><strong>Abstract:</strong> <i>Manuka honey has been recognized for its anti-bacterial and wound-healing activity but its potential antitumor effect is poorly studied despite the fact that it contains many antioxidant compounds. In this study, we investigated the antiproliferative activity of manuka honey on three different cancer cell lines, murine melanoma (B16.F1) and colorectal carcinoma (CT26) as well as human breast cancer (MCF-7) cells in vitro. The data demonstrate that manuka honey has potent anti-proliferative effect on all three cancer cell lines in a time- and dose-dependent manner, being effective at concentrations as low as 0.6% (w/v). This effect is mediated via the activation of a caspase 9-dependent apoptotic pathway, leading to the induction of caspase 3, reduced Bcl-2 expression, DNA fragmentation and cell death. Combination treatment of cancer cells with manuka and paclitaxel in vitro, however, revealed no evidence of a synergistic action on cancer cell proliferation. Furthermore, we utilized an in vivo syngeneic mouse melanoma model to assess the potential effect of intravenously-administered manuka honey, alone or in combination with paclitaxel, on the growth of established tumors. Our findings indicate that systemic administration of manuka honey was not associated with any alterations in haematological or clinical chemistry values in serum of treated mice, demonstrating its safety profile. Treatment with manuka honey alone resulted in about 33% inhibition of tumor growth, which correlated with histologically observable increase in tumor apoptosis. Although better control of tumor growth was observed in animals treated with paclitaxel alone or in combination with manuka honey (61% inhibition), a dramatic improvement in host survival was seen in the co-treatment group. This highlights a potentially novel role for manuka honey in alleviating chemotherapy-induced toxicity.</i><br><strong>Link:</strong> <a target="_blank" rel="noopener" href="https://doi.org/10.1371/journal.pone.0055993">Source</a><br><strong>Citations:</strong> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Kathleen Russano</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://delmarchildcare.com/manuka-honey/">https://delmarchildcare.com/manuka-honey/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="../tags/antiviral/"># Antiviral</a>
+                    
+                        <a href="../tags/antimicrobial/"># Antimicrobial</a>
+                    
+                        <a href="../tags/antibacterial/"># Antibacterial</a>
+                    
+                        <a href="../tags/immunomodulator/"># Immunomodulator</a>
+                    
+                        <a href="../tags/wound-healing/"># Wound Healing</a>
+                    
+                        <a href="../tags/antiinflammatory/"># Antiinflammatory</a>
+                    
+                        <a href="../tags/epithelialization/"># Epithelialization</a>
+                    
+                        <a href="../tags/burn-treatment/"># Burn Treatment</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="../bee-propolis/">Bee Propolis</a>
+            
+            
+            <a class="next" rel="next" href="../honey/">Honey</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Kathleen Russano | Powered by God.</span>
+    </div>
+</footer>
+    </div>
+</body>
+
+</html>
