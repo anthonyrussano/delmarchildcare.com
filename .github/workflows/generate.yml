@@ -1,0 +1,37 @@
+name: Generate Site
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'public/**'
+      - '.github/workflows/**'
+      
+permissions: write-all
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        token: ${{ env.GITHUB_TOKEN }}
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 'latest'
+    - name: Build site
+      run: |
+        npm install
+        node_modules/hexo/bin/hexo gen       
+    - name: commit static assets
+      id: commits
+      uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+        message: 'github actions generated'
+        pull: '--all'
